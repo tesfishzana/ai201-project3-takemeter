@@ -29,6 +29,7 @@ Thumbs.db
 *.pt
 *.safetensors
 model/
+results/finetuned_model/
 
 # Colab-downloaded artifacts (add manually after export)
 # evaluation_results.json and confusion_matrix.png are intentionally committed

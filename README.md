@@ -65,32 +65,69 @@ Five hard cases are documented in `planning.md` (Section 3, "Hard Cases Encounte
 
 ## Model
 
-> *(To be filled in after Milestone 3)*
+- **Base model:** `distilbert-base-uncased` (66M parameters)
+- **Training approach:** Fine-tuned for 3 epochs using the HuggingFace `Trainer` API on the 151-example training split
+- **Hardware:** CPU (no GPU available locally); training completed in ~3.7 minutes
+- **Hyperparameters:**
 
-- **Base model:** `distilbert-base-uncased`
-- **Training approach:** TBD
-- **Key hyperparameter decisions:** TBD
+| Parameter | Value | Rationale |
+|---|---|---|
+| Epochs | 3 | Standard for small classification datasets; early stopping on macro F1 |
+| Learning rate | 2e-5 | HuggingFace default for DistilBERT fine-tuning |
+| Batch size | 16 | Fits comfortably in memory; standard for sequence classification |
+| Max length | 256 | Covers all posts (longest ~180 tokens); pads shorter ones |
+| Seed | 42 | Matches baseline split seed for identical test sets |
 
----
+**Training curve (validation set):**
 
-## Baseline Comparison
-
-> *(To be filled in after Milestone 4)*
-
-Zero-shot baseline: `llama-3.3-70b-versatile` via Groq, prompted to classify each test example with no task-specific training.
+| Epoch | Val Accuracy | Val Macro F1 |
+|---|---|---|
+| 1 | 71.9% | 0.707 |
+| 2 | 90.6% | 0.909 |
+| 3 | **93.8%** | **0.939** |
 
 ---
 
 ## Evaluation Results
 
-> *(To be filled in after Milestone 5)*
+Zero-shot baseline: `llama-3.3-70b-versatile` via Groq (no task-specific training).
+Fine-tuned model: `distilbert-base-uncased` trained on 151 examples for 3 epochs.
+Test set: 33 examples (same stratified split, seed=42, for both models).
 
-| Metric | Fine-tuned Model | Zero-shot Baseline |
-|---|---|---|
-| Overall Accuracy | TBD | TBD |
-| Analysis F1 | TBD | TBD |
-| Hot Take F1 | TBD | TBD |
-| Reaction F1 | TBD | TBD |
+### Overall metrics
+
+| Metric | Fine-tuned DistilBERT | Zero-shot Baseline | Delta |
+|---|---|---|---|
+| Overall Accuracy | **97.0%** | 100.0% | -3.0% |
+| Macro F1 | **0.9701** | 1.0000 | -0.0299 |
+
+### Per-class metrics (fine-tuned model)
+
+| Label | Precision | Recall | F1 | Support |
+|---|---|---|---|---|
+| `analysis` | 1.0000 | 1.0000 | 1.0000 | 10 |
+| `hot_take` | 0.9286 | 1.0000 | 0.9630 | 13 |
+| `reaction` | 1.0000 | 0.9000 | 0.9474 | 10 |
+
+### Confusion matrix (fine-tuned model)
+
+Rows = true label, Columns = predicted label.
+
+|  | analysis | hot_take | reaction |
+|---|---|---|---|
+| **analysis** | 10 | 0 | 0 |
+| **hot_take** | 0 | 13 | 0 |
+| **reaction** | 0 | **1** | 9 |
+
+The single error: one `reaction` post was predicted as `hot_take`. See the Evaluation Report section below.
+
+### Per-class metrics (zero-shot baseline)
+
+| Label | Precision | Recall | F1 | Support |
+|---|---|---|---|---|
+| `analysis` | 1.0000 | 1.0000 | 1.0000 | 10 |
+| `hot_take` | 1.0000 | 1.0000 | 1.0000 | 13 |
+| `reaction` | 1.0000 | 1.0000 | 1.0000 | 10 |
 
 ---
 

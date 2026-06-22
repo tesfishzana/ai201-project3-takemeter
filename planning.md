@@ -366,6 +366,6 @@ Given that the zero-shot baseline achieved 100%, the original ">65% accuracy / 0
 | 1. Community & Label Design | ✅ Complete |
 | 2. Planning Spec (this document) | ✅ Complete |
 | 3. Data Collection & Annotation | ✅ Complete — 216 examples in `data/dataset.csv` |
-| 4. Fine-tuning Pipeline | ⬜ Not started |
-| 5. Baseline Comparison | ✅ Complete — 100% accuracy (see Section 8 reflection) |
+| 4. Fine-tuning Pipeline | ✅ Complete — 97.0% accuracy, macro F1 0.9701 |
+| 5. Baseline Comparison | ✅ Complete — baseline 100% accuracy (see Section 8 reflection) |
 | 6. Evaluation Report | ⬜ Not started |
