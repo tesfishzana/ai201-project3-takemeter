@@ -1,0 +1,2409 @@
+{
+  "overall_accuracy_full_dataset": 0.9676,
+  "calibration_bins": [
+    {
+      "bin": "30%–40%",
+      "lo": 0.3,
+      "hi": 0.4,
+      "count": 5,
+      "accuracy": 0.4,
+      "mean_conf": 0.391
+    },
+    {
+      "bin": "40%–50%",
+      "lo": 0.4,
+      "hi": 0.5,
+      "count": 131,
+      "accuracy": 0.9695,
+      "mean_conf": 0.4571
+    },
+    {
+      "bin": "50%–60%",
+      "lo": 0.5,
+      "hi": 0.6,
+      "count": 80,
+      "accuracy": 1.0,
+      "mean_conf": 0.5225
+    }
+  ],
+  "well_calibrated": false,
+  "monotone": true,
+  "per_example": [
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5473,
+      "probs": {
+        "analysis": 0.5473,
+        "hot_take": 0.2627,
+        "reaction": 0.19
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4824,
+      "probs": {
+        "analysis": 0.2891,
+        "hot_take": 0.4824,
+        "reaction": 0.2285
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5169,
+      "probs": {
+        "analysis": 0.5169,
+        "hot_take": 0.2947,
+        "reaction": 0.1884
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4748,
+      "probs": {
+        "analysis": 0.271,
+        "hot_take": 0.4748,
+        "reaction": 0.2542
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.457,
+      "probs": {
+        "analysis": 0.2761,
+        "hot_take": 0.457,
+        "reaction": 0.267
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4633,
+      "probs": {
+        "analysis": 0.4633,
+        "hot_take": 0.3457,
+        "reaction": 0.191
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4539,
+      "probs": {
+        "analysis": 0.2738,
+        "hot_take": 0.4539,
+        "reaction": 0.2723
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4323,
+      "probs": {
+        "analysis": 0.2383,
+        "hot_take": 0.4323,
+        "reaction": 0.3294
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5541,
+      "probs": {
+        "analysis": 0.5541,
+        "hot_take": 0.2728,
+        "reaction": 0.1731
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4122,
+      "probs": {
+        "analysis": 0.1913,
+        "hot_take": 0.3965,
+        "reaction": 0.4122
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4417,
+      "probs": {
+        "analysis": 0.1745,
+        "hot_take": 0.3838,
+        "reaction": 0.4417
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5212,
+      "probs": {
+        "analysis": 0.1777,
+        "hot_take": 0.3011,
+        "reaction": 0.5212
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4821,
+      "probs": {
+        "analysis": 0.2435,
+        "hot_take": 0.4821,
+        "reaction": 0.2744
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4626,
+      "probs": {
+        "analysis": 0.1854,
+        "hot_take": 0.352,
+        "reaction": 0.4626
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4548,
+      "probs": {
+        "analysis": 0.1865,
+        "hot_take": 0.4548,
+        "reaction": 0.3587
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4909,
+      "probs": {
+        "analysis": 0.4909,
+        "hot_take": 0.3114,
+        "reaction": 0.1977
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4175,
+      "probs": {
+        "analysis": 0.2955,
+        "hot_take": 0.4175,
+        "reaction": 0.287
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5369,
+      "probs": {
+        "analysis": 0.5369,
+        "hot_take": 0.2964,
+        "reaction": 0.1667
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4391,
+      "probs": {
+        "analysis": 0.2541,
+        "hot_take": 0.3068,
+        "reaction": 0.4391
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5224,
+      "probs": {
+        "analysis": 0.1799,
+        "hot_take": 0.2976,
+        "reaction": 0.5224
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "hot_take",
+      "correct": false,
+      "confidence": 0.416,
+      "probs": {
+        "analysis": 0.3797,
+        "hot_take": 0.416,
+        "reaction": 0.2042
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4219,
+      "probs": {
+        "analysis": 0.2457,
+        "hot_take": 0.4219,
+        "reaction": 0.3324
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5151,
+      "probs": {
+        "analysis": 0.178,
+        "hot_take": 0.3069,
+        "reaction": 0.5151
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5148,
+      "probs": {
+        "analysis": 0.1856,
+        "hot_take": 0.2996,
+        "reaction": 0.5148
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5248,
+      "probs": {
+        "analysis": 0.1748,
+        "hot_take": 0.3003,
+        "reaction": 0.5248
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5087,
+      "probs": {
+        "analysis": 0.5087,
+        "hot_take": 0.3274,
+        "reaction": 0.1639
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5382,
+      "probs": {
+        "analysis": 0.2253,
+        "hot_take": 0.5382,
+        "reaction": 0.2364
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5095,
+      "probs": {
+        "analysis": 0.5095,
+        "hot_take": 0.3047,
+        "reaction": 0.1858
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5145,
+      "probs": {
+        "analysis": 0.2591,
+        "hot_take": 0.5145,
+        "reaction": 0.2264
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5215,
+      "probs": {
+        "analysis": 0.1752,
+        "hot_take": 0.3032,
+        "reaction": 0.5215
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4652,
+      "probs": {
+        "analysis": 0.184,
+        "hot_take": 0.3509,
+        "reaction": 0.4652
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5256,
+      "probs": {
+        "analysis": 0.5256,
+        "hot_take": 0.2836,
+        "reaction": 0.1908
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.416,
+      "probs": {
+        "analysis": 0.416,
+        "hot_take": 0.3858,
+        "reaction": 0.1982
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4457,
+      "probs": {
+        "analysis": 0.1679,
+        "hot_take": 0.4457,
+        "reaction": 0.3864
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4967,
+      "probs": {
+        "analysis": 0.4967,
+        "hot_take": 0.3029,
+        "reaction": 0.2005
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5135,
+      "probs": {
+        "analysis": 0.1674,
+        "hot_take": 0.3191,
+        "reaction": 0.5135
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4835,
+      "probs": {
+        "analysis": 0.1918,
+        "hot_take": 0.3247,
+        "reaction": 0.4835
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "analysis",
+      "correct": false,
+      "confidence": 0.4025,
+      "probs": {
+        "analysis": 0.4025,
+        "hot_take": 0.3713,
+        "reaction": 0.2261
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4298,
+      "probs": {
+        "analysis": 0.4298,
+        "hot_take": 0.3498,
+        "reaction": 0.2204
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.534,
+      "probs": {
+        "analysis": 0.534,
+        "hot_take": 0.2819,
+        "reaction": 0.1841
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4385,
+      "probs": {
+        "analysis": 0.352,
+        "hot_take": 0.4385,
+        "reaction": 0.2095
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4299,
+      "probs": {
+        "analysis": 0.3062,
+        "hot_take": 0.4299,
+        "reaction": 0.2639
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4378,
+      "probs": {
+        "analysis": 0.2928,
+        "hot_take": 0.4378,
+        "reaction": 0.2694
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4483,
+      "probs": {
+        "analysis": 0.4483,
+        "hot_take": 0.3589,
+        "reaction": 0.1928
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5311,
+      "probs": {
+        "analysis": 0.1797,
+        "hot_take": 0.2892,
+        "reaction": 0.5311
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5313,
+      "probs": {
+        "analysis": 0.5313,
+        "hot_take": 0.2949,
+        "reaction": 0.1737
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.513,
+      "probs": {
+        "analysis": 0.513,
+        "hot_take": 0.285,
+        "reaction": 0.202
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "hot_take",
+      "correct": false,
+      "confidence": 0.3966,
+      "probs": {
+        "analysis": 0.3899,
+        "hot_take": 0.3966,
+        "reaction": 0.2135
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5419,
+      "probs": {
+        "analysis": 0.2093,
+        "hot_take": 0.5419,
+        "reaction": 0.2488
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4922,
+      "probs": {
+        "analysis": 0.216,
+        "hot_take": 0.4922,
+        "reaction": 0.2918
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4931,
+      "probs": {
+        "analysis": 0.2779,
+        "hot_take": 0.4931,
+        "reaction": 0.229
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.515,
+      "probs": {
+        "analysis": 0.2633,
+        "hot_take": 0.515,
+        "reaction": 0.2217
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4756,
+      "probs": {
+        "analysis": 0.2172,
+        "hot_take": 0.3072,
+        "reaction": 0.4756
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4919,
+      "probs": {
+        "analysis": 0.2599,
+        "hot_take": 0.4919,
+        "reaction": 0.2481
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5302,
+      "probs": {
+        "analysis": 0.1885,
+        "hot_take": 0.2814,
+        "reaction": 0.5302
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4692,
+      "probs": {
+        "analysis": 0.2627,
+        "hot_take": 0.4692,
+        "reaction": 0.2681
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4712,
+      "probs": {
+        "analysis": 0.2712,
+        "hot_take": 0.4712,
+        "reaction": 0.2576
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5316,
+      "probs": {
+        "analysis": 0.5316,
+        "hot_take": 0.2796,
+        "reaction": 0.1888
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5485,
+      "probs": {
+        "analysis": 0.5485,
+        "hot_take": 0.2678,
+        "reaction": 0.1836
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5177,
+      "probs": {
+        "analysis": 0.1872,
+        "hot_take": 0.2951,
+        "reaction": 0.5177
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.3929,
+      "probs": {
+        "analysis": 0.3863,
+        "hot_take": 0.3929,
+        "reaction": 0.2208
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4898,
+      "probs": {
+        "analysis": 0.4898,
+        "hot_take": 0.3267,
+        "reaction": 0.1835
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5218,
+      "probs": {
+        "analysis": 0.5218,
+        "hot_take": 0.3013,
+        "reaction": 0.177
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.424,
+      "probs": {
+        "analysis": 0.1934,
+        "hot_take": 0.3826,
+        "reaction": 0.424
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4686,
+      "probs": {
+        "analysis": 0.1916,
+        "hot_take": 0.4686,
+        "reaction": 0.3397
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4911,
+      "probs": {
+        "analysis": 0.1757,
+        "hot_take": 0.3332,
+        "reaction": 0.4911
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5026,
+      "probs": {
+        "analysis": 0.5026,
+        "hot_take": 0.3196,
+        "reaction": 0.1778
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "reaction",
+      "correct": false,
+      "confidence": 0.4188,
+      "probs": {
+        "analysis": 0.1866,
+        "hot_take": 0.3946,
+        "reaction": 0.4188
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4779,
+      "probs": {
+        "analysis": 0.2806,
+        "hot_take": 0.4779,
+        "reaction": 0.2415
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5217,
+      "probs": {
+        "analysis": 0.2415,
+        "hot_take": 0.5217,
+        "reaction": 0.2368
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4806,
+      "probs": {
+        "analysis": 0.268,
+        "hot_take": 0.4806,
+        "reaction": 0.2514
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4686,
+      "probs": {
+        "analysis": 0.1975,
+        "hot_take": 0.334,
+        "reaction": 0.4686
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5426,
+      "probs": {
+        "analysis": 0.187,
+        "hot_take": 0.2704,
+        "reaction": 0.5426
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4076,
+      "probs": {
+        "analysis": 0.2251,
+        "hot_take": 0.3673,
+        "reaction": 0.4076
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5459,
+      "probs": {
+        "analysis": 0.5459,
+        "hot_take": 0.2775,
+        "reaction": 0.1766
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4566,
+      "probs": {
+        "analysis": 0.2225,
+        "hot_take": 0.321,
+        "reaction": 0.4566
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4296,
+      "probs": {
+        "analysis": 0.1888,
+        "hot_take": 0.3816,
+        "reaction": 0.4296
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4514,
+      "probs": {
+        "analysis": 0.269,
+        "hot_take": 0.4514,
+        "reaction": 0.2796
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4904,
+      "probs": {
+        "analysis": 0.4904,
+        "hot_take": 0.343,
+        "reaction": 0.1666
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4704,
+      "probs": {
+        "analysis": 0.1772,
+        "hot_take": 0.3524,
+        "reaction": 0.4704
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4726,
+      "probs": {
+        "analysis": 0.2095,
+        "hot_take": 0.4726,
+        "reaction": 0.3179
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4701,
+      "probs": {
+        "analysis": 0.2891,
+        "hot_take": 0.4701,
+        "reaction": 0.2408
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5011,
+      "probs": {
+        "analysis": 0.1818,
+        "hot_take": 0.3172,
+        "reaction": 0.5011
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.427,
+      "probs": {
+        "analysis": 0.3308,
+        "hot_take": 0.427,
+        "reaction": 0.2422
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4525,
+      "probs": {
+        "analysis": 0.2565,
+        "hot_take": 0.4525,
+        "reaction": 0.291
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5409,
+      "probs": {
+        "analysis": 0.5409,
+        "hot_take": 0.2739,
+        "reaction": 0.1852
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4807,
+      "probs": {
+        "analysis": 0.2307,
+        "hot_take": 0.4807,
+        "reaction": 0.2886
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4437,
+      "probs": {
+        "analysis": 0.2035,
+        "hot_take": 0.3528,
+        "reaction": 0.4437
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5215,
+      "probs": {
+        "analysis": 0.1701,
+        "hot_take": 0.3084,
+        "reaction": 0.5215
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4045,
+      "probs": {
+        "analysis": 0.2728,
+        "hot_take": 0.4045,
+        "reaction": 0.3227
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5405,
+      "probs": {
+        "analysis": 0.5405,
+        "hot_take": 0.274,
+        "reaction": 0.1854
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4735,
+      "probs": {
+        "analysis": 0.2273,
+        "hot_take": 0.4735,
+        "reaction": 0.2992
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4257,
+      "probs": {
+        "analysis": 0.187,
+        "hot_take": 0.3873,
+        "reaction": 0.4257
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4959,
+      "probs": {
+        "analysis": 0.4959,
+        "hot_take": 0.2903,
+        "reaction": 0.2139
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5021,
+      "probs": {
+        "analysis": 0.226,
+        "hot_take": 0.5021,
+        "reaction": 0.2718
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5284,
+      "probs": {
+        "analysis": 0.2187,
+        "hot_take": 0.5284,
+        "reaction": 0.2529
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4186,
+      "probs": {
+        "analysis": 0.4186,
+        "hot_take": 0.361,
+        "reaction": 0.2204
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4239,
+      "probs": {
+        "analysis": 0.2128,
+        "hot_take": 0.3632,
+        "reaction": 0.4239
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4746,
+      "probs": {
+        "analysis": 0.2944,
+        "hot_take": 0.4746,
+        "reaction": 0.231
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4687,
+      "probs": {
+        "analysis": 0.2738,
+        "hot_take": 0.4687,
+        "reaction": 0.2575
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5172,
+      "probs": {
+        "analysis": 0.1825,
+        "hot_take": 0.3003,
+        "reaction": 0.5172
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.419,
+      "probs": {
+        "analysis": 0.3161,
+        "hot_take": 0.419,
+        "reaction": 0.265
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4692,
+      "probs": {
+        "analysis": 0.2859,
+        "hot_take": 0.4692,
+        "reaction": 0.2449
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5182,
+      "probs": {
+        "analysis": 0.1827,
+        "hot_take": 0.2991,
+        "reaction": 0.5182
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5123,
+      "probs": {
+        "analysis": 0.197,
+        "hot_take": 0.2907,
+        "reaction": 0.5123
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4544,
+      "probs": {
+        "analysis": 0.4544,
+        "hot_take": 0.3539,
+        "reaction": 0.1917
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.453,
+      "probs": {
+        "analysis": 0.3056,
+        "hot_take": 0.453,
+        "reaction": 0.2414
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5112,
+      "probs": {
+        "analysis": 0.1887,
+        "hot_take": 0.3001,
+        "reaction": 0.5112
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4162,
+      "probs": {
+        "analysis": 0.2332,
+        "hot_take": 0.4162,
+        "reaction": 0.3506
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.533,
+      "probs": {
+        "analysis": 0.1814,
+        "hot_take": 0.2856,
+        "reaction": 0.533
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.448,
+      "probs": {
+        "analysis": 0.448,
+        "hot_take": 0.3634,
+        "reaction": 0.1886
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4973,
+      "probs": {
+        "analysis": 0.2815,
+        "hot_take": 0.4973,
+        "reaction": 0.2212
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4524,
+      "probs": {
+        "analysis": 0.2218,
+        "hot_take": 0.4524,
+        "reaction": 0.3258
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5226,
+      "probs": {
+        "analysis": 0.2123,
+        "hot_take": 0.5226,
+        "reaction": 0.2651
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.456,
+      "probs": {
+        "analysis": 0.2153,
+        "hot_take": 0.3288,
+        "reaction": 0.456
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4682,
+      "probs": {
+        "analysis": 0.2463,
+        "hot_take": 0.4682,
+        "reaction": 0.2855
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.3956,
+      "probs": {
+        "analysis": 0.2267,
+        "hot_take": 0.3956,
+        "reaction": 0.3776
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4694,
+      "probs": {
+        "analysis": 0.1948,
+        "hot_take": 0.3358,
+        "reaction": 0.4694
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5648,
+      "probs": {
+        "analysis": 0.5648,
+        "hot_take": 0.255,
+        "reaction": 0.1801
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5113,
+      "probs": {
+        "analysis": 0.1658,
+        "hot_take": 0.3229,
+        "reaction": 0.5113
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5015,
+      "probs": {
+        "analysis": 0.5015,
+        "hot_take": 0.3147,
+        "reaction": 0.1838
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4432,
+      "probs": {
+        "analysis": 0.4432,
+        "hot_take": 0.3547,
+        "reaction": 0.2021
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4339,
+      "probs": {
+        "analysis": 0.2223,
+        "hot_take": 0.3437,
+        "reaction": 0.4339
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4942,
+      "probs": {
+        "analysis": 0.213,
+        "hot_take": 0.4942,
+        "reaction": 0.2929
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4923,
+      "probs": {
+        "analysis": 0.4923,
+        "hot_take": 0.3374,
+        "reaction": 0.1703
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4325,
+      "probs": {
+        "analysis": 0.2041,
+        "hot_take": 0.4325,
+        "reaction": 0.3634
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4735,
+      "probs": {
+        "analysis": 0.4735,
+        "hot_take": 0.3392,
+        "reaction": 0.1873
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5229,
+      "probs": {
+        "analysis": 0.5229,
+        "hot_take": 0.2997,
+        "reaction": 0.1773
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4941,
+      "probs": {
+        "analysis": 0.2197,
+        "hot_take": 0.4941,
+        "reaction": 0.2862
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5243,
+      "probs": {
+        "analysis": 0.1773,
+        "hot_take": 0.2983,
+        "reaction": 0.5243
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4985,
+      "probs": {
+        "analysis": 0.2276,
+        "hot_take": 0.4985,
+        "reaction": 0.274
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.506,
+      "probs": {
+        "analysis": 0.2768,
+        "hot_take": 0.506,
+        "reaction": 0.2172
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4392,
+      "probs": {
+        "analysis": 0.2328,
+        "hot_take": 0.4392,
+        "reaction": 0.328
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.444,
+      "probs": {
+        "analysis": 0.1984,
+        "hot_take": 0.3576,
+        "reaction": 0.444
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.507,
+      "probs": {
+        "analysis": 0.1879,
+        "hot_take": 0.3051,
+        "reaction": 0.507
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4586,
+      "probs": {
+        "analysis": 0.4586,
+        "hot_take": 0.3439,
+        "reaction": 0.1976
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4946,
+      "probs": {
+        "analysis": 0.4946,
+        "hot_take": 0.3196,
+        "reaction": 0.1858
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4231,
+      "probs": {
+        "analysis": 0.1866,
+        "hot_take": 0.4231,
+        "reaction": 0.3903
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4957,
+      "probs": {
+        "analysis": 0.4957,
+        "hot_take": 0.2995,
+        "reaction": 0.2049
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4311,
+      "probs": {
+        "analysis": 0.3369,
+        "hot_take": 0.4311,
+        "reaction": 0.2319
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.489,
+      "probs": {
+        "analysis": 0.1997,
+        "hot_take": 0.489,
+        "reaction": 0.3112
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5173,
+      "probs": {
+        "analysis": 0.5173,
+        "hot_take": 0.2853,
+        "reaction": 0.1974
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4182,
+      "probs": {
+        "analysis": 0.3539,
+        "hot_take": 0.4182,
+        "reaction": 0.2279
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5348,
+      "probs": {
+        "analysis": 0.2258,
+        "hot_take": 0.5348,
+        "reaction": 0.2394
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4894,
+      "probs": {
+        "analysis": 0.1952,
+        "hot_take": 0.3154,
+        "reaction": 0.4894
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4575,
+      "probs": {
+        "analysis": 0.2254,
+        "hot_take": 0.3171,
+        "reaction": 0.4575
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4987,
+      "probs": {
+        "analysis": 0.4987,
+        "hot_take": 0.302,
+        "reaction": 0.1993
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "hot_take",
+      "correct": false,
+      "confidence": 0.3774,
+      "probs": {
+        "analysis": 0.2678,
+        "hot_take": 0.3774,
+        "reaction": 0.3547
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5268,
+      "probs": {
+        "analysis": 0.1825,
+        "hot_take": 0.2907,
+        "reaction": 0.5268
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.412,
+      "probs": {
+        "analysis": 0.2603,
+        "hot_take": 0.412,
+        "reaction": 0.3277
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4501,
+      "probs": {
+        "analysis": 0.4501,
+        "hot_take": 0.3386,
+        "reaction": 0.2113
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5342,
+      "probs": {
+        "analysis": 0.1797,
+        "hot_take": 0.2861,
+        "reaction": 0.5342
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5154,
+      "probs": {
+        "analysis": 0.5154,
+        "hot_take": 0.2831,
+        "reaction": 0.2015
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4864,
+      "probs": {
+        "analysis": 0.4864,
+        "hot_take": 0.3138,
+        "reaction": 0.1998
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4149,
+      "probs": {
+        "analysis": 0.3158,
+        "hot_take": 0.4149,
+        "reaction": 0.2693
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5047,
+      "probs": {
+        "analysis": 0.2813,
+        "hot_take": 0.5047,
+        "reaction": 0.2139
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5034,
+      "probs": {
+        "analysis": 0.2531,
+        "hot_take": 0.5034,
+        "reaction": 0.2435
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4682,
+      "probs": {
+        "analysis": 0.1991,
+        "hot_take": 0.4682,
+        "reaction": 0.3327
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5377,
+      "probs": {
+        "analysis": 0.5377,
+        "hot_take": 0.3008,
+        "reaction": 0.1615
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4827,
+      "probs": {
+        "analysis": 0.2096,
+        "hot_take": 0.4827,
+        "reaction": 0.3077
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4855,
+      "probs": {
+        "analysis": 0.4855,
+        "hot_take": 0.3069,
+        "reaction": 0.2077
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.511,
+      "probs": {
+        "analysis": 0.262,
+        "hot_take": 0.511,
+        "reaction": 0.2271
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.485,
+      "probs": {
+        "analysis": 0.2793,
+        "hot_take": 0.485,
+        "reaction": 0.2356
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4746,
+      "probs": {
+        "analysis": 0.4746,
+        "hot_take": 0.2993,
+        "reaction": 0.2262
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4413,
+      "probs": {
+        "analysis": 0.3319,
+        "hot_take": 0.4413,
+        "reaction": 0.2268
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4103,
+      "probs": {
+        "analysis": 0.22,
+        "hot_take": 0.3697,
+        "reaction": 0.4103
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.457,
+      "probs": {
+        "analysis": 0.2296,
+        "hot_take": 0.457,
+        "reaction": 0.3133
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4824,
+      "probs": {
+        "analysis": 0.2191,
+        "hot_take": 0.4824,
+        "reaction": 0.2985
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5103,
+      "probs": {
+        "analysis": 0.5103,
+        "hot_take": 0.3235,
+        "reaction": 0.1662
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5129,
+      "probs": {
+        "analysis": 0.2121,
+        "hot_take": 0.5129,
+        "reaction": 0.275
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4495,
+      "probs": {
+        "analysis": 0.2324,
+        "hot_take": 0.318,
+        "reaction": 0.4495
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5238,
+      "probs": {
+        "analysis": 0.1685,
+        "hot_take": 0.3077,
+        "reaction": 0.5238
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4535,
+      "probs": {
+        "analysis": 0.2478,
+        "hot_take": 0.4535,
+        "reaction": 0.2986
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "hot_take",
+      "correct": false,
+      "confidence": 0.3926,
+      "probs": {
+        "analysis": 0.2318,
+        "hot_take": 0.3926,
+        "reaction": 0.3757
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5343,
+      "probs": {
+        "analysis": 0.5343,
+        "hot_take": 0.2803,
+        "reaction": 0.1854
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4744,
+      "probs": {
+        "analysis": 0.1961,
+        "hot_take": 0.3295,
+        "reaction": 0.4744
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "reaction",
+      "correct": false,
+      "confidence": 0.4405,
+      "probs": {
+        "analysis": 0.2183,
+        "hot_take": 0.3412,
+        "reaction": 0.4405
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5138,
+      "probs": {
+        "analysis": 0.1889,
+        "hot_take": 0.2974,
+        "reaction": 0.5138
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5453,
+      "probs": {
+        "analysis": 0.1619,
+        "hot_take": 0.2928,
+        "reaction": 0.5453
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5089,
+      "probs": {
+        "analysis": 0.5089,
+        "hot_take": 0.3125,
+        "reaction": 0.1786
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4542,
+      "probs": {
+        "analysis": 0.4542,
+        "hot_take": 0.3392,
+        "reaction": 0.2065
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4818,
+      "probs": {
+        "analysis": 0.1925,
+        "hot_take": 0.4818,
+        "reaction": 0.3257
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5364,
+      "probs": {
+        "analysis": 0.1795,
+        "hot_take": 0.2842,
+        "reaction": 0.5364
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.422,
+      "probs": {
+        "analysis": 0.2653,
+        "hot_take": 0.422,
+        "reaction": 0.3128
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5438,
+      "probs": {
+        "analysis": 0.5438,
+        "hot_take": 0.2853,
+        "reaction": 0.1709
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4597,
+      "probs": {
+        "analysis": 0.2398,
+        "hot_take": 0.4597,
+        "reaction": 0.3004
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5084,
+      "probs": {
+        "analysis": 0.1889,
+        "hot_take": 0.3027,
+        "reaction": 0.5084
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4861,
+      "probs": {
+        "analysis": 0.1894,
+        "hot_take": 0.3245,
+        "reaction": 0.4861
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5041,
+      "probs": {
+        "analysis": 0.1891,
+        "hot_take": 0.3068,
+        "reaction": 0.5041
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4269,
+      "probs": {
+        "analysis": 0.2184,
+        "hot_take": 0.3547,
+        "reaction": 0.4269
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5148,
+      "probs": {
+        "analysis": 0.5148,
+        "hot_take": 0.3011,
+        "reaction": 0.1841
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4616,
+      "probs": {
+        "analysis": 0.2045,
+        "hot_take": 0.4616,
+        "reaction": 0.334
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4325,
+      "probs": {
+        "analysis": 0.2132,
+        "hot_take": 0.3543,
+        "reaction": 0.4325
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4623,
+      "probs": {
+        "analysis": 0.2035,
+        "hot_take": 0.3342,
+        "reaction": 0.4623
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5148,
+      "probs": {
+        "analysis": 0.2505,
+        "hot_take": 0.5148,
+        "reaction": 0.2348
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4759,
+      "probs": {
+        "analysis": 0.4759,
+        "hot_take": 0.3485,
+        "reaction": 0.1756
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4286,
+      "probs": {
+        "analysis": 0.4286,
+        "hot_take": 0.377,
+        "reaction": 0.1944
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4824,
+      "probs": {
+        "analysis": 0.4824,
+        "hot_take": 0.3358,
+        "reaction": 0.1817
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4419,
+      "probs": {
+        "analysis": 0.4419,
+        "hot_take": 0.3208,
+        "reaction": 0.2373
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5588,
+      "probs": {
+        "analysis": 0.5588,
+        "hot_take": 0.273,
+        "reaction": 0.1682
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4052,
+      "probs": {
+        "analysis": 0.3831,
+        "hot_take": 0.4052,
+        "reaction": 0.2117
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5265,
+      "probs": {
+        "analysis": 0.1742,
+        "hot_take": 0.2993,
+        "reaction": 0.5265
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.51,
+      "probs": {
+        "analysis": 0.51,
+        "hot_take": 0.3042,
+        "reaction": 0.1858
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.4666,
+      "probs": {
+        "analysis": 0.2881,
+        "hot_take": 0.4666,
+        "reaction": 0.2453
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5074,
+      "probs": {
+        "analysis": 0.1786,
+        "hot_take": 0.314,
+        "reaction": 0.5074
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4919,
+      "probs": {
+        "analysis": 0.1921,
+        "hot_take": 0.316,
+        "reaction": 0.4919
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5068,
+      "probs": {
+        "analysis": 0.5068,
+        "hot_take": 0.2886,
+        "reaction": 0.2046
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.4435,
+      "probs": {
+        "analysis": 0.2287,
+        "hot_take": 0.3278,
+        "reaction": 0.4435
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4616,
+      "probs": {
+        "analysis": 0.4616,
+        "hot_take": 0.3613,
+        "reaction": 0.1771
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4776,
+      "probs": {
+        "analysis": 0.4776,
+        "hot_take": 0.33,
+        "reaction": 0.1925
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.5261,
+      "probs": {
+        "analysis": 0.5261,
+        "hot_take": 0.286,
+        "reaction": 0.1879
+      }
+    },
+    {
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "correct": true,
+      "confidence": 0.5022,
+      "probs": {
+        "analysis": 0.2091,
+        "hot_take": 0.5022,
+        "reaction": 0.2888
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.5066,
+      "probs": {
+        "analysis": 0.1747,
+        "hot_take": 0.3187,
+        "reaction": 0.5066
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.49,
+      "probs": {
+        "analysis": 0.49,
+        "hot_take": 0.3165,
+        "reaction": 0.1934
+      }
+    },
+    {
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "correct": true,
+      "confidence": 0.4992,
+      "probs": {
+        "analysis": 0.4992,
+        "hot_take": 0.3116,
+        "reaction": 0.1892
+      }
+    },
+    {
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "correct": true,
+      "confidence": 0.403,
+      "probs": {
+        "analysis": 0.2411,
+        "hot_take": 0.3559,
+        "reaction": 0.403
+      }
+    }
+  ]
+}

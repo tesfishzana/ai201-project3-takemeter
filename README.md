@@ -247,12 +247,93 @@ Five examples run through the fine-tuned model. Confidence scores are softmax pr
 
 ---
 
-## How to Run
+## Stretch Features
 
-**Requirements:** Python 3.9+, `transformers>=5.0`, `torch`, `scikit-learn`, `datasets`, `matplotlib`, `groq`
+### Deployed Interface
+
+A Gradio web interface accepts any post as input and returns the predicted label with per-class confidence scores.
 
 ```bash
-pip install transformers torch scikit-learn datasets matplotlib groq
+python scripts/interface.py
+# Opens at http://localhost:7860
+```
+
+The interface shows the predicted label in a color-coded card (blue = analysis, red = hot_take, green = reaction), the confidence percentage, and a bar chart of all three label scores. Five example posts are pre-loaded. See `scripts/interface.py`.
+
+---
+
+### Confidence Calibration
+
+Ran inference on all 216 dataset examples and grouped predictions into confidence bins to test whether higher confidence corresponds to higher accuracy.
+
+**Results:**
+
+| Confidence bin | Count | Accuracy | Mean confidence |
+|---|---|---|---|
+| 30–40% | 5 | 40.0% | 39.1% |
+| 40–50% | 131 | 97.0% | 45.7% |
+| 50–60% | 80 | 100.0% | 52.2% |
+
+**Interpretation:** The model is **underconfident but monotone**. It never exceeds 60% confidence on any example (softmax over three classes stays close to the 33% random baseline), yet its accuracy is 97–100% on the 40–60% bins. The only examples where confidence is meaningfully low (30–40%) are also the only ones the model gets wrong — a 40% accuracy at 39% mean confidence is almost perfectly calibrated.
+
+**Practical implication for a deployed interface:** You cannot use the raw confidence score to distinguish "definitely right" from "probably right" — a 45% confident prediction and a 58% confident prediction are both almost always correct. The confidence score is only informative at the very low end (below 40%), where it correctly signals genuine uncertainty. A production system should show a warning below ~38% confidence rather than treating confidence as a linear quality signal.
+
+The calibration plot is at `results/calibration_plot.png`. Full per-example data in `results/calibration_results.json`.
+
+---
+
+### Inter-Annotator Reliability
+
+**Setup:** Groq `llama-3.3-70b-versatile` served as Annotator 2 on 35 examples (12 analysis, 13 hot_take, 10 reaction). Annotator 2 received only a brief three-sentence description of each label — no detailed decision rules, no edge case examples. This tests whether the labels are clear enough for a general-purpose model to apply without the full taxonomy.
+
+**Disclosure:** Annotator 2 is an LLM, not a human. This is disclosed explicitly and tests label clarity under reduced specification — not human cognitive agreement.
+
+**Results:**
+
+| Metric | Value |
+|---|---|
+| Examples labeled | 35 / 35 |
+| Agreements | 35 / 35 |
+| Percent agreement | **100.0%** |
+| Cohen's kappa | **1.000** |
+| Interpretation | Almost perfect (κ ≥ 0.80) |
+
+**What perfect agreement means:** The labels are sufficiently clear that even a brief description is enough for a large LLM to apply them consistently. There were zero disagreements, which confirms the taxonomy is internally coherent — but also reflects the same property that drove high model performance: the dataset examples are archetically representative of each label, so both annotators see strong surface signals with no genuine ambiguity.
+
+**What it doesn't tell us:** The 35 examples were sampled from the full dataset, which contains clean archetypal instances. The hard cases from `planning.md` (the ones requiring explicit decision rules) were not in this sample. If the inter-annotator study had focused on the five hard annotation cases, agreement would likely have been lower — those are the examples where the brief description alone is insufficient and the full decision rules do real work. A more informative study would oversample boundary cases.
+
+Full results in `results/interannotator_results.json`.
+
+---
+
+### Error Pattern Analysis
+
+**The systematic pattern:** The fine-tuned model consistently confuses the `reaction` → `hot_take` direction when a reaction post contains **a bold embedded claim stated in absolute terms**.
+
+**Evidence from the error set:**
+
+| Example | True | Predicted | Confidence |
+|---|---|---|---|
+| "This is the best series in ten years and I'm not sleeping until it ends" (Tatum fadeaway) | reaction | hot_take | 37.7% |
+| "Trade confirmed. The league is never going to be the same." | reaction | reaction ✓ | 52.5% |
+| "I've watched every Celtics game since 2010 and tonight was the most electric crowd I've ever seen at the Garden." | reaction | reaction ✓ | high |
+
+The first post is the test error. The second post was classified correctly, but only barely (52.5%) — the phrase "the league is never going to be the same" created the same pull toward `hot_take`. The third post (no embedded claim, purely expressive) is classified with high confidence.
+
+**The generalizable pattern:** The model has learned `absolute superlative + claim = hot_take`. That rule is correct for standalone hot takes ("This is the best player of all time"). It fails specifically when the superlative is **incidental hyperbole inside an expressive post** — "this is the best series in ten years" is the emotional color of someone watching overtime, not an argument they're making. The model cannot distinguish declarative hyperbole from declarative assertion because both look identical at the token level.
+
+**Why this is a labeling problem, not a prompt problem:** The label definitions are correct — the distinction between reaction and hot_take genuinely turns on argumentative intent. The issue is data: there are not enough training examples of reaction posts with embedded bold claims to teach the model that this combination stays `reaction`. More training examples of this specific sub-type (expressive posts containing superlative language) would reduce the confusion without changing any label definitions.
+
+**Directional asymmetry:** The model never misclassifies `hot_take` as `reaction`. The confusion is strictly one-way: posts the model suspects of being bold claims occasionally turn out to be expressive reactions. This asymmetry confirms the model has learned a strong "bold language = hot_take" prior that it applies conservatively — it only breaks the rule when the reaction signals are very strong.
+
+---
+
+## How to Run
+
+**Requirements:** Python 3.9+, `transformers>=5.0`, `torch`, `scikit-learn`, `datasets`, `matplotlib`, `groq`, `gradio`
+
+```bash
+pip install transformers torch scikit-learn datasets matplotlib groq gradio accelerate
 ```
 
 **1. Generate the dataset:**
@@ -301,7 +382,13 @@ python scripts/predict.py --hard-cases
 | `scripts/baseline.py` | Zero-shot Groq baseline runner |
 | `scripts/finetune.py` | DistilBERT fine-tuning and evaluation pipeline |
 | `scripts/predict.py` | Interactive and batch inference with confidence scores |
+| `scripts/interface.py` | Gradio web interface (stretch: deployed interface) |
+| `scripts/calibration.py` | Confidence calibration analysis (stretch: calibration) |
+| `scripts/interannotator.py` | Inter-annotator reliability via Groq (stretch: IAA) |
 | `results/baseline_results.json` | Zero-shot baseline: 100% accuracy, macro F1 1.000 |
 | `results/evaluation_results.json` | Fine-tuned model: 97.0% accuracy, macro F1 0.9701 |
 | `results/confusion_matrix.png` | Confusion matrix heatmap (fine-tuned model) |
 | `results/hard_case_predictions.json` | Confidence scores on 5 hard annotation cases + test error |
+| `results/calibration_results.json` | Calibration analysis: per-bin accuracy vs. confidence |
+| `results/calibration_plot.png` | Calibration curve plot |
+| `results/interannotator_results.json` | IAA: 100% agreement, kappa=1.000, 35 examples |

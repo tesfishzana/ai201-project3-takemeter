@@ -1,0 +1,261 @@
+{
+  "annotator2_model": "llama-3.3-70b-versatile",
+  "annotator2_prompt": "brief description only (no decision rules)",
+  "n_examples": 35,
+  "percent_agreement": 1.0,
+  "cohen_kappa": 1.0,
+  "interpretation": "Almost perfect agreement (kappa >= 0.80)",
+  "label_distribution": {
+    "analysis": 12,
+    "hot_take": 13,
+    "reaction": 10
+  },
+  "disagreements": [],
+  "details": [
+    {
+      "text": "The Warriors are done. Their window closed and they're going to be a lottery team within two years. Everyone saw this coming except Warriors fans who thought the dynasty would last forever.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "If LeBron had Jordan's mentality he would have 10 rings right now. His problem has always been caring more about his brand than winning. Jordan would have never formed a super team.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "The 'load management destroyed competitive balance' argument doesn't hold up against the injury data. Soft tissue injury rates actually declined 12% league-wide after load management became standard practice (2018–2023 vs. 2013–2018). The games missed to rest are offset by fewer season-ending injuries to star players.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "There is no universe where LeBron James wins a ring without another top-10 player next to him. Jordan did it twice with Horace Grant and a role player next to him. That's why Jordan is the GOAT.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "The NBA doesn't care about small market teams and never will. The rules, the scheduling, the refereeing — everything is set up to make sure New York, LA, and Golden State are always relevant. It's not a conspiracy, it's just money.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "Donovan Mitchell is a certified star who has been wasted on bad teams his whole career. Put him on the Celtics in their prime and they win the championship by 20 games in the regular season.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "Charles Barkley's case for being underrated in the all-time conversation: he averaged 22.1 PPG and 11.7 RPG for his career while shooting .541 FG%. For a player listed at 6'6\" (likely shorter), those rebounding numbers are historically unprecedented — only Rodman rebounded at a higher rate, and Rodman didn't score. Barkley was doing both.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "Anthony Davis is the biggest bust in NBA history for a player of his talent level. He could be the best player in the league if he cared more. He simply doesn't want it bad enough.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "He just got ejected for a technical in a game 6 we were winning. I am not okay. The basketball gods have declared war on this franchise specifically.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "I've watched every Celtics game since 2010 and tonight was the most electric crowd I've ever seen at the Garden. That crowd was a 6th player in a way that actually meant something.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "The Clippers' long-term problem isn't their roster — it's their luxury tax situation. They're projected to be $90M over the tax line next season, which triggers the repeater tax for the third time. The per-dollar efficiency of their roster construction is among the worst in the league, and they can't fix it without losing the players that make them competitive.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "The reason small market teams can't retain stars isn't market size alone — it's the entertainment amenity gap. Research on free agent decisions since 2010 shows that players cite team competitiveness first, but among equally competitive options, large market teams win at 3:1 over small markets. Oklahoma City has had to overpay every star they've kept relative to the open market.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "Team just announced he's out for the season. Torn ACL. I'm genuinely sad right now. This is awful news. Hoping for a full recovery — nobody deserves this.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "Jamal Murray is the best clutch player in the NBA. The 2020 bubble run should have made him a household name. He is criminally underrated and gets zero attention because he plays in Denver.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "The final buzzer went. Series over. Season over. I'm proud of this team. They gave everything they had and it wasn't enough. That's all sports sometimes. Till next year.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "The reason rebounding is more position-neutral now than in any prior era is simple physics: the three-point revolution has moved shots further from the basket. Long misses create longer rebounds that land further from the paint — in areas where guards and wings can compete with centers. Rebounding by non-big players has increased 23% since 2015.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "Tim Duncan's career VORP of 149.3 is the highest of any player in the shot-clock era who never led the league in scoring. His value came entirely from efficiency, defense, and consistency — 19 straight seasons with a positive BPM, which no other player in the database has matched.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "THIS MAN JUST SHOT A THREE WITH HIS OFF HAND WHILE FALLING OUT OF BOUNDS AND IT WENT IN. I CANNOT. I WILL NOT. WHO DOES THAT.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "The Philadelphia 76ers Process was the most embarrassing era in NBA history. Tanking intentionally for five years, losing 70 games seasons in a row, and they still don't have a championship. It was fraud on their fanbase.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "Anthony Davis is the most volatile franchise cornerstone in the league in terms of floor vs. ceiling. When healthy he posts a net rating of +9.2; when he misses more than 20 games, the Lakers' net rating drops to -1.1. No other top-5 player has that wide a swing between their healthy and injured team impact.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "John Stockton's assist totals are often dismissed as a system product, but his assist percentage (percentage of teammate field goals he assisted while on the court) was 52.3% for his career — meaning he was involved in over half of every made field goal while he played. That's not a system stat; that's a measure of actual facilitation.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "Dwyane Wade is a fraudulent Hall of Famer. He only has rings because of LeBron and his individual legacy is massively overstated by Heat fans and South Florida media.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "The Spurs dynasty was fake because the competition in the West was weak in their early years and the rules favored them later. Pop is a great coach but those championships are all asterisks.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "That's a broken play, a scramble, a kickout, a 30-foot Steph Curry three, game over. I watched the sequence six times. Basketball is not real.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "Ja Morant's injury history is directly correlated with his play style: he drives to the basket more than any other guard and takes contact at a rate 40% above the positional average. His durability ceiling is structurally limited by how he plays, not bad luck. To get a healthy Ja you need a different Ja, and that's the roster-building question Memphis has to answer.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "Chris Paul's playoff reputation as a choke artist doesn't survive statistical scrutiny. His PPG and APG actually improve in the playoffs compared to the regular season across his career. The narrative is driven by three or four high-profile fourth-quarter sequences that get replayed endlessly — not his aggregate performance.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "Shaq was the most dominant player of all time and it's not even debatable. When he was in his prime, nobody could stop him — not Jordan, not Bird, not anyone. Pure physical dominance at that level has never been matched.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "WAIT WHAT. CURRY JUST HIT A 50 FOOTER AT THE BUZZER. I'm screaming. My neighbors hate me right now. That was the most insane thing I've ever seen.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "Kyrie Irving is the most skilled player in the history of the NBA, full stop. Nobody has his handle, his footwork, and his shot creation all at once. People hate him so they won't admit it.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    },
+    {
+      "text": "Kyrie just did that stepback that lands him in the free throw lane somehow and nobody was calling travel?? I need officials to explain that in real time.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "Trade just confirmed. Three All-Stars on the same team. The league is never going to be the same. I don't know how to feel. I need a minute.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "The Lakers' half-court offense ranks 28th in the league in points per 100 possessions when LeBron sits. The 'LeBron is dragging the team' narrative ignores that their spacing collapses without his gravity — no other ball-handler on the roster creates the same defensive attention.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "Paul George's regular season vs. playoff split is real but misattributed. His scoring average drops only 1.2 points in the playoffs, but his usage rate drops 4.5 percent — which means he's actually slightly more efficient per opportunity. The 'PG chokes' narrative is driven by a few high-profile late-game misses, not aggregate performance.",
+      "annotator1": "analysis",
+      "annotator2": "analysis",
+      "raw_ann2": "analysis",
+      "agree": true
+    },
+    {
+      "text": "Just watched the Kawhi shot for the first time in a while. Still gets me every time. That bounce. The silence. Then the explosion. Greatest moment I've ever watched live.",
+      "annotator1": "reaction",
+      "annotator2": "reaction",
+      "raw_ann2": "reaction",
+      "agree": true
+    },
+    {
+      "text": "The modern NBA is unwatchable. Teams just jack up threes, nobody posts up anymore, the mid-range is dead, and every team looks the same. Analytics ruined the sport.",
+      "annotator1": "hot_take",
+      "annotator2": "hot_take",
+      "raw_ann2": "hot_take",
+      "agree": true
+    }
+  ]
+}
