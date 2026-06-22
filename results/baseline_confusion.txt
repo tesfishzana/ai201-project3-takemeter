@@ -1,0 +1,8 @@
+Confusion matrix — Groq zero-shot baseline
+Rows = true label, Columns = predicted label
+
+                analysis    hot_take    reaction
+------------------------------------------------
+analysis              10           0           0
+hot_take               0          13           0
+reaction               0           0          10

@@ -1,0 +1,283 @@
+{
+  "model": "llama-3.3-70b-versatile",
+  "type": "zero_shot_baseline",
+  "metrics": {
+    "overall_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "analysis": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "hot_take": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 13
+      },
+      "reaction": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      }
+    },
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ],
+    "confusion_labels": [
+      "analysis",
+      "hot_take",
+      "reaction"
+    ]
+  },
+  "test_examples": [
+    {
+      "text": "The three-pointer has made the shot clock more valuable as a strategic tool. Teams with fewer than 7 seconds on the clock are now taking corner threes at 2.4x the rate they were in 2010, and those shots score at 1.07 points per possession — better than almost any other end-of-clock option. The shot clock crisis has become a shot clock opportunity.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "Devin Booker will win an MVP before Jayson Tatum. Booker is a more natural scorer, a clutch performer, and plays with less support. The East bias in the media hides how good Booker actually is.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "Paul George has no business being in the All-Star game this year. He's had one good stretch and the media ran with it. He's a second star at best and everyone outside of LA knows it.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "This might be the best regular season game I've watched in 10 years. Every possession mattered. Both teams gave everything. Triple OT with no players left standing. Incredible.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "The Oklahoma City rebuild is going to fail because no star player wants to live in Oklahoma City. They can draft all they want but the moment those players can leave, they will.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "The reason the Celtics' current core is so hard to beat in the playoffs is their defensive versatility: their five starters can all guard positions 1 through 4 without significant drop-off. Tracking data shows they give up the lowest points per possession against isolation plays of any team in the league — because isolation is a bad play against switching defenses.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "Manu Ginobili's career Win Shares per 48 minutes (.218) is higher than most Hall of Fame starters despite coming off the bench for most of his career. The 'sixth man' label undersells his actual impact — his playoff minutes per game were equivalent to a starter, and his performance in those minutes rivals anyone on those Spurs teams.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "Ben Simmons is a wasted talent and it's entirely his own fault. His work ethic has always been suspect, his mental health excuse is overblown, and the Nets gave up too much to get him.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "Curry just shot from half court with three seconds left and it went in for no reason. I've given up trying to explain Steph Curry to people who don't watch. There are no words.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "Just found out about the Westbrook trade and I'm still processing. Can't tell if this is genius or disaster. The vibes are all over the place in this thread.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "The Sixers just lost by 2 in a game where Embiid had 38. I'm done for the day. Maybe the week. Somebody else cover this franchise.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "He just got ejected for a technical in a game 6 we were winning. I am not okay. The basketball gods have declared war on this franchise specifically.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "The reason second-round picks have become more valuable in trade negotiations over the past decade: the league's increasing salary cap has created roster spots where cheap second-round contracts can be worth 15-20 million dollars per year in surplus value over their rookie deal. Two good second-round picks in back-to-back years equals one mid-tier free agent deal.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "The case for Hakeem Olajuwon as the greatest center of all time rests on one underappreciated fact: he was an elite defender AND an elite offensive player at the same time. Shaq was better offensively; Robinson was comparably dominant defensively; but neither combined both at Hakeem's level. His two championships without a second star are also relevant context.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "The East has been weak for 15 years and any team in the West top-8 would have made the Finals in the East at least twice during that stretch. Eastern stars are fraudulently celebrated.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "Kyrie just did that stepback that lands him in the free throw lane somehow and nobody was calling travel?? I need officials to explain that in real time.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "The Suns blew their championship window with bad management and they deserve everything they're getting now. Robert Sarver's ownership poisoned that franchise for a decade.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "Looking at clutch stats across Kobe Bryant's career: his TS% in the final two minutes of games within five points was .512, which is below league average for that era. The Kobe clutch mythology is built on shot volume and memorable makes — the misses are forgotten. Jordan's equivalent number was .621.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "The league is soft now. Players in the 80s and 90s would wipe the floor with these guys. No hand-checking, no defense allowed — might as well be playing horse.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "The Houston Rockets small ball experiment is the dumbest coaching decision in modern NBA history. They had a Hall of Fame center and chose to sit him. Pure arrogance from Daryl Morey.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "Dame Lillard will never win a championship. He's a loser and the Trail Blazers were right to move on. The numbers don't lie.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "The MVP award is completely meaningless. It goes to whoever has the best PR team, not whoever is actually the best player. It's a popularity contest and always has been.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "The argument that Embiid's injuries make him a lesser MVP candidate ignores that his per-game production when healthy is the highest in the league by most metrics. VORP, BPM, and PER all have him top-3 in every healthy season he's played. Availability is a real concern, but it's a separate question from peak performance.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "Steve Nash winning back-to-back MVPs over Shaq was the most embarrassing thing the voters ever did. Shaq was still a dominant player; Nash was a system player. The analytics guys ruined the award.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "Jayson Tatum just hit a fadeaway over two defenders with 1.3 seconds left to force overtime. This is the best series in ten years and I'm not sleeping until it ends.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "The injury report just dropped and he's listed as questionable for game 7. I genuinely cannot watch. I'll check the score at midnight after it's over.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "John Stockton's assist totals are often dismissed as a system product, but his assist percentage (percentage of teammate field goals he assisted while on the court) was 52.3% for his career — meaning he was involved in over half of every made field goal while he played. That's not a system stat; that's a measure of actual facilitation.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "The criticism of KD's rings ignores that Oklahoma City was statistically better than the Warriors teams he joined when adjusted for playoff performance. His PIPM on both championship teams ranked first on the roster. The rings argument is backward — the teams improved because of him, not the other way around.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "The game winning shot bounced off the back of the rim and somehow went in. I need the physics community to explain this to me immediately.",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    },
+    {
+      "text": "People comparing Wembanyama to past big man prospects are missing the defensive uniqueness. His shot contest rate per 100 possessions in his rookie year exceeded Gobert's at the same age. His wingspan-adjusted reach means he can contest shots from a step further than any player in league history. He's not a slow burn — he's already changing defensive outcomes.",
+      "true_label": "analysis",
+      "predicted": "analysis",
+      "raw_response": "analysis",
+      "correct": true
+    },
+    {
+      "text": "The Spurs dynasty was fake because the competition in the West was weak in their early years and the rules favored them later. Pop is a great coach but those championships are all asterisks.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "Westbrook was never a good player. His triple doubles were always a statistical mirage and everyone knew it. The contract he got was the worst in NBA history.",
+      "true_label": "hot_take",
+      "predicted": "hot_take",
+      "raw_response": "hot_take",
+      "correct": true
+    },
+    {
+      "text": "I literally cannot believe they blew a 20-point fourth quarter lead AGAIN. This team is going to give me a heart attack. Season over fr",
+      "true_label": "reaction",
+      "predicted": "reaction",
+      "raw_response": "reaction",
+      "correct": true
+    }
+  ]
+}
